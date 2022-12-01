@@ -38,7 +38,7 @@ movie_list = movie_clf['title'].values
 title = st.selectbox("What type of movie do you want to watch tonight?", movie_list)
 
 if st.button('Recommend'):
-    with st.spinner('Showtime!'):
+    with st.spinner('Loading..'):
         images, titles = getRecommends(title)
 
         idx = 0
